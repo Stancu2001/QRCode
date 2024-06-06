@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .button-style {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+<p>Salut, <span th:text="${name}">Nume</span>!</p>
+<p>Pentru a confirma contul, te rog să accesezi butonul de mai jos:</p>
+<a th:href="${link}" class="button-style">Confirmă contul</a>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL2qjGS6C-MNJTI3Z59DKTx3dOVpp8NfVW1jvkDQNZ0g&s" alt="error">
+</body>
+</html>

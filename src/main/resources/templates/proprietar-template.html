@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Imobil Inchiriat</title>
+</head>
+<body>
+<h2>Imobilul cu numele <span th:text="${immobileName}">  </span> a fost închiriat de <span th:text="${renterName}"></span>.</h2>
+<p>Stimate proprietar,</p>
+<p>Imobilul dvs. cu numele <strong th:text="${immobileName}"></strong> a fost închiriat recent de către <strong th:text="${renterName}"></strong>.</p>
+<p>Vă mulțumim pentru utilizarea serviciului nostru!</p>
+<p>Cu stimă,<br>Echipa noastră</p>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmare Rezervare</title>
+    <style>
+        .button-style {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white !important;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+<h2>Stimate <span th:text="${renterName}"></span>,</h2>
+<p>Rezervarea pentru imobilul <strong th:text="${immobileName}"></strong> a fost confirmată cu succes.</p>
+<p>Imobilul selectat, <strong th:text="${immobileName}"></strong>, din proprietatea <strong th:text="${propertyName}"></strong> va fi rezervat pentru dvs.</p>
+<p>Adresa proprietății este: <strong th:text="${propertyAddress}"></strong>.</p>
+<p>Perioada rezervării este între <strong th:text="${checkInDate}"></strong> și <strong th:text="${checkOutDate}"></strong>.</p>
+<p><strong>Pentru a avea acces la locatie trebuie scanat codul QR de mai jos.</strong></p>
+<a th:href="@{'http://localhost:8080/uploads/files/' + ${QRName}}" class="button-style">Vezi codul QR</a>
+<p>Vă mulțumim pentru alegerea noastră!</p>
+<p>Cu stimă,<br>Echipa noastră</p>
+<p><strong>Contact:</strong></p>
+<p>Telefon 1: <span th:text="${contactPhone1}"></span></p>
+<p>Telefon 2: <span th:text="${contactPhone2}"></span></p>
+<p>Email: <span th:text="${contactEmail}"></span></p>
+</body>
+</html>
+
+
