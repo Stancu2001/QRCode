@@ -1,0 +1,2 @@
+# licenta
+# QRCode
